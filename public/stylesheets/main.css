@@ -13,3 +13,58 @@
 .delete-form{
     display: inline;
 }
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #000;
+  font-family: monospace;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  /* blink-caret .5s step-end 9; */
+  animation: 
+    typing 3.5s steps(30, end)
+    
+}
+.typewriter h3 {
+  color: #000;
+  font-family: monospace;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+ /* border-right: .15em solid orange;  The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  opacity:0;
+  /* blink-caret .5s step-end 9;
+  -webkit-animation-delay: 2s;  Safari 4.0 - 8.0 */
+ 	 
+  animation: 
+	typings 3.5s steps(30, end);
+  animation-delay:3.6s;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+   
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0%}
+  to{width: 100%}
+}
+@keyframes typings {
+  from { width: 0%;opacity:1;}
+  to{width: 100%; opacity:1; }
+}
+
+/* The typewriter cursor effect @keyframes blink-caret {
+  from, to { border-color: transparent; border-right: 0em solid orange;}
+  50% { border-color: orange }
+}*/
