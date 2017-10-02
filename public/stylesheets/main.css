@@ -1,3 +1,50 @@
+body{
+  background:url("https://www.adtechnosys.com/wp-content/uploads/2015/04/Website-Design-Background.png");
+  background-size: round auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+hr{
+  display: block;
+  width: 75px;
+  color: white;
+}
+
+
+
+.actions-vertical , .actions-vertical-2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.actions-vertical button{
+  font-size: 22px;
+  margin: 25px;
+  outline:none;
+  padding: 10px 50px 10px 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #76C8B7;
+  color: rgb(255,255,255);
+  text-decoration: none;
+  white-space:nowrap;
+}
+.actions-vertical-2 button{
+  font-size: 22px;
+  margin: 25px;
+  outline:none;
+  padding: 10px 50px 10px 50px;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  background: transparent;
+  color: rgb(255,255,255);
+  text-decoration: none;
+  white-space:nowrap;
+}
+
 .thumbnail img{
     width: 100%;
     
@@ -14,11 +61,15 @@
     display: inline;
 }
 
+.Lbar{
+  font-family: Galada;
+}
 
 
 
+/* ANIMATED TEXT */
 .typewriter h1 {
-  color: #000;
+  color: #fff;
   font-family: monospace;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -32,7 +83,7 @@
     
 }
 .typewriter h3 {
-  color: #000;
+  color: #fff;
   font-family: monospace;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -46,7 +97,7 @@
  	 
   animation: 
 	typings 3.5s steps(30, end);
-  animation-delay:3.6s;
+  animation-delay:2.55s;
     -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
    -moz-animation-fill-mode:forwards; /*FF 5+*/
    -o-animation-fill-mode:forwards; /*Not implemented yet*/
@@ -57,11 +108,11 @@
 /* The typing effect */
 @keyframes typing {
   from { width: 0%}
-  to{width: 100%}
+  to{width: 100%;overflow: visible;}
 }
 @keyframes typings {
-  from { width: 0%;opacity:1;}
-  to{width: 100%; opacity:1; }
+  from { width: 0%;opacity:1}
+  to{width: 100%; opacity:1;overflow: visible;}
 }
 
 /* The typewriter cursor effect @keyframes blink-caret {
